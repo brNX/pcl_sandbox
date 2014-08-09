@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="pcl_sandbox" type="pcl_sandbox" name="pcl_filter">
+    <param name="min_neighbors" value="8"/>
+    <param name="radius" value="0.10"/>
+    <remap from="input" to="cloud"/>
+  </node>
+
+</launch>
